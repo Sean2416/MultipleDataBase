@@ -36,6 +36,17 @@ namespace MultipleDataBase.FirstDbEntities
         {
             CreationTime = DateTime.Now;
         }
+
+        public Flow(FlowLog log)
+        {
+            Proto = 999;
+            DevID = log.DevID;
+            Dhost = log.Dhost;
+            Act = log.Act;
+            Stime = log.Stime;
+            Sip = log.Sip;
+            Dip = log.Dip;
+        }
     }
 }
 

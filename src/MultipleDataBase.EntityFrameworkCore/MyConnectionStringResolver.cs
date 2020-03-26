@@ -10,7 +10,7 @@ using System.Text;
 
 namespace MultipleDataBase
 {
-    class MyConnectionStringResolver : DefaultConnectionStringResolver
+    public class MyConnectionStringResolver : DefaultConnectionStringResolver
     {
 
         public MyConnectionStringResolver(IAbpStartupConfiguration configuration)
