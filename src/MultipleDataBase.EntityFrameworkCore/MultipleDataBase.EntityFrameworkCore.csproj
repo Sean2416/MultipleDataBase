@@ -15,11 +15,6 @@
     <RootNamespace>MultipleDataBase</RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Remove="Migrations\**" />
-    <EmbeddedResource Remove="Migrations\**" />
-    <None Remove="Migrations\**" />
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\MultipleDataBase.Core\MultipleDataBase.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
@@ -35,6 +30,7 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="3.1.1" />
   </ItemGroup>
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet" Version="2.0.0" />

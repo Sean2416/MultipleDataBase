@@ -4,6 +4,8 @@
     {
         public const string LocalizationSourceName = "MultipleDataBase";
 
-        public const string ConnectionStringName = "Default";
+        public const string ConnectionStringName = "MsSql";
+
+        public const string MySqlConnectionStringName = "MySql";
     }
 }

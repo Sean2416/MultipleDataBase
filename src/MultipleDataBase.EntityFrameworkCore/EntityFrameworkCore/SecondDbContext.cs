@@ -4,11 +4,11 @@ using MultipleDataBase.FirstDbEntities;
 
 namespace MultipleDataBase.EntityFrameworkCore
 {
-    public class MultipleDataBaseDbContext : AbpDbContext
+    public class SecondDbContext : AbpDbContext
     {
-        public DbSet<Flow> Flows { get; set; }
+        public DbSet<FlowLog> FlowLogs { get; set; }
 
-        public MultipleDataBaseDbContext(DbContextOptions<MultipleDataBaseDbContext> options) 
+        public SecondDbContext(DbContextOptions<SecondDbContext> options) 
             : base(options)
         {
 
